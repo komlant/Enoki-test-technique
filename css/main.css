@@ -1,0 +1,435 @@
+html {
+  height: 100%;
+}
+
+::-webkit-scrollbar{
+	width: 10px;
+}
+
+::-webkit-scrollbar-track{ 
+	border-radius: 5px; 
+	box-shadow: inset 0 0 10px rgba(0,0,0,0.25); 
+} 
+
+::-webkit-scrollbar-thumb {
+	background: grey;
+	border-radius: 10px;
+  }
+
+
+body{
+	font-family: "Montserrat", sans-serif;
+	overflow-x: hidden; 
+}	
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+/*Style de la page d'accueil*/
+
+.bigimage{
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	background-image: url('../img/image1.png');
+	background-size: cover;
+}
+
+.overlay{
+	width: 100%;
+	height: 100%;
+	font-size: 36px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(0,0,0,0,5);
+	bottom: -400;
+}
+
+.overlay a{
+	color: white;
+	
+	
+}
+
+
+.summary {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+}
+
+.texte{
+	width: 100%;
+	height: 30%;
+	font-size: 26px;
+	color: #2580BC;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+p{
+	width: 100%;
+	height: 60%;
+	font-size: 17px;
+	color: #2580BC;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	top: 10%;
+	font-family: 'MuseoModerno', cursive;
+}
+
+
+a{
+	text-decoration: none;
+}
+
+/*Style du slider*/
+
+ main{ 
+	 width: 100%; 
+	 height: 400px; 
+	 margin: 200px auto; 
+	 overflow: hidden; 
+	 position: relative; 
+ } 
+
+ span{ 
+	 position: absolute; 
+	 top: 20%; 
+	 font-size: 150px; 
+	 font-weight: bold;
+	 color: #2580BC; 
+	 cursor: pointer; 
+	 left: .0,5%; 
+	 z-index: 1; 
+ } 
+
+ span:nth-of-type(2){ 
+	 left: 96%; 
+	 text-align: right; 
+ } 
+
+ section{ 
+	 width: 80%; 
+	 height: 400px; 
+	 margin: 10px auto;  
+	 display: flex; 
+	 justify-content: left; 
+	 overflow-x: auto; 
+ } 
+
+ section::-webkit-scrollbar{ 
+	 visibility: hidden; 
+ } 
+
+/*Style des images du slider*/
+
+ .scroll{ 
+	min-width: 470px; 
+	height: 200px; 
+	position: relative; 
+	left: 0; 
+	text-align: center; 
+	padding-top: 100px; 
+	font-size: 100px; 
+	font-weight: bold; 
+	margin: 10px 20px; 
+	color: white; 
+	 
+	transition: 0.5s; 
+	background-image: url('../img/image7.png'); 
+	background-size: cover; 
+	
+	
+	
+ } 
+
+ .scroll1{ 
+	min-width: 470px; 
+	height: 200px; 
+	position: relative; 
+	left: 0; 
+	text-align: center; 
+	padding-top: 100px; 
+	font-size: 100px; 
+	font-weight: bold; 
+	margin: 10px 20px; 
+	color: white; 
+	 
+	transition: 0.5s; 
+	background-image: url('../img/image5.png'); 
+	background-size: cover; 
+	
+	
+	
+ } 
+ .scroll2{ 
+	min-width: 470px; 
+	height: 200px; 
+	position: relative; 
+	left: 0; 
+	text-align: center; 
+	padding-top: 100px; 
+	font-size: 100px; 
+	font-weight: bold; 
+	margin: 10px 20px; 
+	color: white; 
+	 
+	transition: 0.5s; 
+	background-image: url('../img/image6.png'); 
+	background-size: cover; 
+	
+	
+	
+ } 
+ .scroll3{ 
+	min-width: 470px; 
+	height: 200px; 
+	position: relative; 
+	left: 0; 
+	text-align: center; 
+	padding-top: 100px; 
+	font-size: 100px; 
+	font-weight: bold; 
+	margin: 10px 20px; 
+	color: white; 
+	 
+	transition: 0.5s; 
+	background-image: url('../img/image8.png'); 
+	background-size: cover; 
+	
+	
+	
+ } 
+ 
+ .scroll4{ 
+	min-width: 470px; 
+	height: 200px; 
+	position: relative; 
+	left: 0; 
+	text-align: center; 
+	padding-top: 100px; 
+	font-size: 100px; 
+	font-weight: bold; 
+	margin: 10px 20px; 
+	color: white; 
+	 
+	transition: 0.5s; 
+	background-image: url('../img/image4.png'); 
+	background-size: cover; 
+	
+	
+	
+ } 
+
+ /*Style des étiquettes*/
+
+ .post-content{
+	background-color: #ffffff;
+	width: 250px;
+	height: 10px;
+	margin: 120px;
+	padding: 30px;
+	transform: translateY(-60px);
+	position: absolute;
+	bottom: -200;
+	left: -40;
+	border-color: gray;
+	border-bottom:3px solid rgb(212, 210, 210);
+	 
+	 
+ }
+ 
+ .post-content h3{
+	 font-size: 16px;
+	 margin-bottom: 10px;
+	 color:#2580BC;
+	 justify-content: center;
+	align-items: center;
+
+
+ }
+
+ .post-content p{
+	font-size: 12px;
+	justify-content: center;
+	align-items: center;
+
+
+ }
+ 
+ /*Style du bouton "More Climbers"*/
+
+.btn {
+	background: #9AF2D3;
+	width: 200px;
+	height: 60px;
+	border: 4px solid #9AF2D3;
+	font-size: 20 px;
+	font-weight: bold;
+	color: #285D81;
+	transition: .4s linear;
+	font-family: "Montserrat", sans-serif;	
+}
+
+.btn:hover{
+	color: 9AF2D3;
+}
+
+.btn::before{
+	content: "";
+	position: absolute;
+	width:0px;
+	height: 55px;
+	top: 0px;
+	left: 0px;
+	background-color: #9AF2D3;
+	z-index: -1;
+	transition: .4 linear;
+	cursor: pointer;
+}
+
+.btn:hover::before{
+	width: 245px;
+}
+
+/*Style de la 3 ième page*/
+
+
+.blue-screen{
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	background-color: #2580BC;
+}
+
+.texte2{
+	width: 100%;
+	height: 30%;
+	font-size: 26px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.texte2 p{
+	width: 100%;
+	height: 60%;
+	font-size: 15px;
+	font-size-adjust: 0.5;
+	font-family: 'MuseoModerno', cursive;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	top: 10%;
+
+}
+
+/*Style de la carte*/
+
+.bckground img{
+	position:relative;
+  margin-right: 20px;
+  width: -200px;
+  height: -200px;
+  top: -15;
+}
+
+
+.card {
+	display: grid;
+	grid-template-columns: 300px;
+	grid-template-rows: 110px 210px 80px;
+	grid-template-areas: "image" "text" "statss"; 
+	font-family: roboto;
+	background:white;
+	text-align: center;
+	margin-top: -140px;
+	margin-bottom: -240px;
+	padding-top: -240px;
+	position: relative;
+	top: 200;
+  }
+  
+
+  .card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+ 
+  .container {
+	padding: 2px 16px;
+  }
+
+  .container p{
+	color: #8F8F8F;
+	text-align: left;
+	font-family: "Montserrat", sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+  } 
+
+  .container h4{
+	color: #2580BC;
+	text-align: left;
+	font-family: "Montserrat", sans-serif;
+	font-size: 15px;
+  } 
+
+  .card img {
+	grid-area: text;
+	
+	height: 200px; 
+  }
+
+/*Style du bouton "More News"*/
+
+.btn1 {
+	background: white;
+	width: 200px;
+	height: 60px;
+	border: 4px solid white;
+	font-size: 20 px;
+	font-weight: bold;
+	color: #285D81;
+	transition: .4s linear;
+	font-family: "Montserrat", sans-serif;
+}
+
+.btn1:hover{
+	color: 9AF2D3;
+}
+
+.btn1::before{
+	content: "";
+	position: absolute;
+	width:0px;
+	height: 55px;
+	top: 0px;
+	left: 0px;
+	background-color: white;
+	z-index: -1;
+	transition: .4 linear;
+	cursor: pointer;
+}
+
+.btn1:hover::before{
+	width: 245px;
+}
+
+
